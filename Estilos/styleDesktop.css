@@ -1,0 +1,348 @@
+
+
+@font-face {
+  font-family: ArchivoBlack ;
+  src: url(/fuentes/ArchivoBlack-Regular.ttf);
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+
+    h1 {
+      font-family:'ArchivoBlack';
+        font-size: 2rem;
+        text-align: center;
+        color: #e65c00;
+        margin-bottom: 2.5rem;
+        margin-top: 2.5rem;
+    }
+    
+    h2 {
+      font-family:'ArchivoBlack';
+       text-align: center;
+       font-size: 1.5rem;
+        font-weight: 600;
+        color: #e65c00;
+        margin-top: 2rem;
+         margin-bottom: 2rem;
+        }
+    
+    h3{
+        font-size: 1.25rem;
+        font-family:'ArchivoBlack';
+    }
+    
+    p {
+        font-size: 1rem;
+        margin-bottom: 1.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a{
+        text-decoration: none;
+        color: #000000;
+        color: inherit;
+        }
+
+
+  
+
+}
+
+body{
+    padding: 0;
+    margin:0;
+    overflow-x: hidden;
+}
+
+
+
+
+
+/*---------------------* Slider styles----------------------------------- */
+
+
+.slider-container {
+    margin-top: 2%;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+/*----------------SECCION-3--------------------------------*/
+
+.seccion-3{
+    border-radius: 2%;
+    display: flex;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    justify-content: center;
+    height: auto;
+    padding: 2%;
+    font-size: 1.3em;
+    line-height: 35px;
+    
+}
+
+.seccion-3-texto h2{
+    color: #FF7300;
+     }
+
+     .seccion-3-texto{
+    width: 50%;
+     }
+
+     .seccion-3 span{
+        color:black;
+        font-size: 0.6em;
+     }
+    .seccion-3 h2{
+        text-align: center;
+        color: #FF7300;
+        font-size: 1.7em;
+    }
+
+    .seccion-3 ul{
+        text-align: center;
+        list-style: none;
+        font-weight: 600;
+       
+    }
+
+   /*-----------------------------------------SECCION BANNER--------------------------------*/
+
+   .banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .banner1, .banner2,.banner3 {
+  background-color: #535353;
+  width: 250px; 
+  height: 250px; 
+  border: 3px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+.seccion-circular{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2em;
+  }
+
+  .seccion-circular .bannercirc{
+    padding: 2%;
+}
+
+.bannercirc{
+    width:360px;
+    border: 2px solid rgb(255, 255, 255); 
+    border-radius: 50%;
+    background-image: url(/imagenes/gray-bg.png);
+    border: 4px solid  black; 
+    height: 360px;
+    color: whitesmoke;
+    text-align: center;
+    padding: 2%;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+
+/********************************INICIO SECCION 4*****************************************************/
+
+/* Contenedor principal de la cuadrícula */
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas por defecto */
+    grid-template-areas: 
+      "calidad equipamiento accesibilidad"; /* Distribución inicial en pantallas grandes */
+  }
+  
+  /* Estilo para cada elemento de la cuadrícula */
+  .grid-item {
+    
+    background-color: blanchedalmond;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Encabezado */
+  .grid-item h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* Estilo de las imágenes */
+  .grid-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+  
+  /* Estilo del texto */
+  .grid-item p {
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+    text-align: center;
+    line-height: 1.6;
+    padding: 10px 0;
+  }
+  
+  /* Definición de cada área en la cuadrícula */
+  .calidad-precio {
+    grid-area: calidad;
+  }
+  
+  .equipamiento {
+    grid-area: equipamiento;
+  }
+  
+  .accesibilidad {
+    grid-area: accesibilidad;
+  }
+  
+  /* Responsivo para pantallas medianas seccion 4*/
+
+  @media (max-width: 1024px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr); /* Dos columnas en tablets */
+      grid-template-areas: 
+
+        "calidad equipamiento"
+        "accesibilidad accesibilidad"; /* Accesibilidad ocupa toda la segunda fila */
+        gap: 0px;
+    }
+
+
+
+
+
+ 
+    .accesibilidad {
+      grid-column: span 2; /* Abarca dos columnas */
+      margin-bottom:24px;
+    }
+
+
+
+
+  }
+  
+
+  /* Responsivo para móviles seccion 4 */
+
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* Una columna en móviles */
+      grid-template-areas: 
+        "calidad"
+        "equipamiento"
+        "accesibilidad"; /* Cada área en su propia fila */
+    }
+  
+    /* Ajustes de márgenes y paddings */
+    .grid-item {
+      padding: 15px;
+    }
+  
+    .grid-item h3 {
+      font-size: 1.2em;
+    }
+  
+    .grid-item img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+
+    }
+    .calidad-precio{
+        margin-bottom: 1.5rem;
+    }
+    .equipamiento{
+        margin-bottom: 1rem;
+    }
+
+
+    .accesibilidad{
+
+
+        margin-bottom: 1.5rem;
+
+    }
+
+
+  }
+
+  /* **************************** FIN   SECCION 4 ********************************************************************/
+
+.cookie-consent {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    z-index: 1000;
+    display: block;
+}
+
+.cookie-consent button {
+    margin-left: 15px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #FF7300;
+    border: none;
+    cursor: pointer;
+} 
+

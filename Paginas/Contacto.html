@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Estilos/contacto.css">
+    <link rel="stylesheet" href="/Estilos/headerstyle.css">
+    <link rel="stylesheet" href="/Estilos/footerStyle.css">
+    <link rel="shortcut icon" href="/imagenes/iconos/android-icon-96x96.png" type="image/x-icon">
+   
+
+    <title>Aula Group Contacto</title>
+
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="Inicio.html"><img src="/imagenes/logo.png" alt="logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="" href="Inicio.html">Inicio</a>
+ 
+                </li>
+                <li>
+                    <a href="Las_aulas.html">Las aulas</a>
+
+                    <ul class="submenu">
+                        <li><a href="Alcala.html">Alcalá de Henares</a></li>
+                        <li><a href="Arganda.html">Arganda del rey</a></li>
+                        <li><a href="Atocha.html">Atocha</a></li>
+                        <li><a href="Getafe.html">Getafe</a></li>
+                        <li><a href="Humanes.html">Humanes</a></li>
+                        <li><a href="Leganes.html">Leganés</a></li>
+                        <li><a href="Mostoles.html">Móstoles</a></li>
+                        <li><a href="Vistalegre.html">Vistalegre</a></li>
+                    </ul>
+                </li>
+                <li><a href="Contacto.html">Contacto</a>
+
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <div class="titulo">
+        <h1>CONTACTO / PETICION DE PRESUPUESTO</h1>
+    </div>  
+
+    <div class="bloque_padre">
+        <div class="bloque_izq">      
+            <div class="bloque_izq_info_politica">
+                <section>
+                    
+                    <p>Ponemos a su disposición el siguiente formulario de Contacto para que pueda ponerse en contacto con nosotros o solicitar presupuesto.</p>
+                    <p>Los campos con asterisco (*) son obligatorios.</p>
+                </section>
+                <section>
+                    <h2> <a href="Politica_Privacidad.html">POLITICA DE PRIVACIDAD</a></h2>
+                    <p>De acuerdo con las disposiciones de la Ley 15/1999, de 13 de Diciembre, de Protección de Datos de Carácter Personal, Aula Group le informa que los datos recogidos en este formulario pertenecen a dicha organización, teniendo como finalidad atender las peticiones que usted demande en la web, y en ningún caso se cederán los datos personales de los usuarios a terceros ajenos a Aula Group sin su consentimiento expreso.</p>
+                    <p>Asimismo, tiene derecho a acceder, rectificar y darse de baja de los servicios prestados en esta web.</p>
+                </section>
+            </div>
+        </div>
+
+        <div class="bloque_der">
+            <form action="" method="post" onsubmit="return validarFormulario();">
+                <h2 class="sub_titulo_form">FORMULARIO DE CONTACTO</h2>
+                <div class="formulario">
+                    <p>
+                        <label for="nombre">Nombre*:</label>
+                        <input type="text" name="nombre" id="nombre" required>
+                    </p>
+                    <p>
+                        <label for="apellido1">Apellido*:</label>
+                        <input type="text" name="apellido" id="apellido" required>
+                    </p>
+                    <p>
+                        <label for="email">Email*:</label>
+                        <input type="email" name="email" id="email" required>
+                    </p>
+                    <p>
+                        <label for="telefono">Teléfono*:</label>
+                        <input type="text" name="telefono" id="telefono" required>
+                    </p>
+                    <p>
+                        <label for="comentario">Comentario*:</label>
+                        <textarea id="comentario" name="comentario" placeholder="Escribe algo..." required></textarea>
+                    </p>
+                </div>
+                <div class="bloque_privacidad_form">
+                    <input type="checkbox" name="privacidad" id="privacidad" value="politica_de_privacidad" required>
+                    <label for="privacidad"><a id="enlace_he_leido_politica" href="/Paginas/Politica_Privacidad.html">He leído y acepto la Política de privacidad</a></label>
+                </div>
+                <section class="centrar_boton_enviar">
+                    <button type="submit" name="Enviar" id="enviar" value="Enviar">ENVIAR SOLICITUD</button>
+                </section>                       
+            </form>
+        </div>
+    </div>
+
+   
+    <footer>
+        <div class="bloq2">
+            <img src="/imagenes/MADRID_CENTRO (1).png" class="mapa_footer"  alt="mapa alquiler aulas" id="map">
+        </div>
+    
+    
+        <div class="bloq1">
+            <h3 class="footer_titulos">DÓNDE ESTAMOS</h3>
+            <p class="footer_p">Nuestras aulas se encuentran en Madrid Centro, Getafe, Leganés, Alcalá de Henares, Humanes y Arganda del Rey, en centros acreditados por la Comunidad de Madrid y con muy buena comunicación tanto en vehículo privado como en transporte público.</p>
+        </div>
+    
+        
+    
+        <div class="bloq3">
+           
+            
+            <p class="footer_p" >Teléfono: 91 665 23 54</p>
+            <p class="footer_p"  ><a id="enlace_politica" href="Politica_Privacidad.html">Política de Privacidad</a></p>
+        </div>
+        
+  
+    </footer>
+
+
+
+      <script src="/JS/validacion.js" defer></script>
+</body>
+</html>

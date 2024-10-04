@@ -1,0 +1,216 @@
+
+@font-face {
+    font-family: ArchivoBlack ;
+    src: url(/fuentes/ArchivoBlack-Regular.ttf);
+  }
+
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    background-color: white;
+}
+
+html {
+
+    h1 {
+        font-family:'ArchivoBlack';
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 2.5rem;
+        margin-top: 2.5rem;
+    }
+    
+    h2 {
+        font-family:'ArchivoBlack';
+       text-align: center;
+       font-size: 1.5rem;
+        font-weight: 600;
+        color: #e65c00;
+        margin-top: 2rem;
+         margin-bottom: 2rem;
+        }
+    
+    h3{
+        font-size: 1.25rem;
+        font-family:'ArchivoBlack';
+    }
+    
+    p {
+
+    margin-bottom: 1.2rem;
+     font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem 0;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    
+    }
+
+    
+  
+
+
+
+    a{
+        text-decoration: none;
+        color: #000000;
+        }
+
+
+   
+
+}
+
+
+
+.subtitulos{
+
+
+    background-color:white;
+    padding: 1rem;
+    
+}
+
+
+
+
+.titulo {
+    text-align: center;
+    width: 100%;
+    background: url(/imagenes/gray-bg.png);
+  
+     padding-top: 1px;
+     padding-bottom: 1px;
+    
+
+    color: white;
+}
+
+
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+
+
+
+/* *************************************BLOQUE PADRE **********************************************/
+.bloque_padre {
+        display: flex;
+    max-width: 1200px;
+    margin: 3rem auto;
+    gap: 0.5rem; /* Espacio entre los bloques */
+    background-color: white;
+}
+
+
+
+/* *********************BLOQUE IZQUIERDO *********************/
+.bloque_izquierdo {
+    
+    flex: 0 0 40%; /* 40% del ancho */
+    padding: 1.5rem;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: blanchedalmond;
+    box-shadow: 0 2px 10px 8px rgba(0, 0, 0, 0.1);
+ 
+}
+
+/* **********************BLOQUE DERECHO *************************/
+.bloque_derecho {
+    
+    flex: 0 0 60%; /* 60% del ancho */
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: blanchedalmond;
+    
+    box-shadow: 0 2px 10px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************MEDIAS QUERY  ***************************************/
+
+@media (max-width:480px) {
+    .bloque_padre {
+        flex-direction: column;
+    }
+
+    .bloque_izquierdo, 
+    .bloque_derecho { 
+        flex: 1 0 100%;
+    }
+
+    footer{
+        display: inline-block;
+ 
+
+    }
+}
+
+@media (min-width:481px) and (max-width:768px){
+    .bloque_padre {
+        flex-direction: column;
+    }
+
+    .bloque_izquierdo, 
+    .bloque_derecho { 
+        flex: 1 0 100%;
+    }
+
+
+    footer{
+        display: inline-block;
+    }
+
+}
+
+@media (min-width:768px) and (max-width:1024px){
+
+    .bloque_padre {
+        flex-direction: column;
+    }
+
+    .bloque_izquierdo, 
+    .bloque_derecho { 
+        flex: 1 0 100%;
+    } 
+
+    p {
+        font-size: 1.1rem;
+    }
+    
+
+}
+
+
+
+/**************FIN MEDIA QUERY  ***************************************************/
+

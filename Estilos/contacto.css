@@ -1,0 +1,267 @@
+
+
+@font-face {
+    font-family: ArchivoBlack ;
+    src: url(/fuentes/ArchivoBlack-Regular.ttf);
+  }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+html {
+
+    h1 {
+        font-family:'ArchivoBlack';
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 2.5rem;
+        margin-top: 2.5rem;
+    }
+    
+    h2 {
+        font-family:'ArchivoBlack';
+       text-align: center;
+       font-size: 1.5rem;
+        font-weight: 600;
+        color: #e65c00;
+        margin-top: 2rem;
+         margin-bottom: 2rem;
+        }
+    
+    h3{
+        font-size: 1.25rem;
+        font-family:'ArchivoBlack';
+    }
+    
+    p {
+
+    margin-bottom: 1.2rem;
+     font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem 0;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    
+    }
+
+    
+  
+
+
+
+    a{
+        text-decoration: none;
+        color: #000000;
+        }
+
+
+   
+
+}
+
+
+
+
+.sub_titulo_form{
+   
+
+    font-size: 1.5rem;
+}
+
+
+.titulo {
+    text-align: center;
+    width: 100%;
+    background: url(/imagenes/gray-bg.png);
+  
+     padding-top: 1px;
+     padding-bottom: 1px;
+    
+
+    color: white;
+}
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: whitesmoke; */
+    color:black;
+}
+
+.bloque_padre {
+    display: flex;
+    max-width: 1200px;
+    margin: 3rem auto;
+    gap: 0.5rem; /* Espacio entre los bloques */
+    background-color: white;
+}
+
+/* *********************BLOQUE IZQUIERDO ****************************/
+.bloque_izq {
+    
+    flex: 0 0 60%; /* 60% del ancho */
+    padding: 1.5rem;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: blanchedalmond;
+    box-shadow: 0 2px 10px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.bloque_izq_info_politica{
+    
+    font-size: 1rem;
+    padding: 4rem 2rem;
+    text-align: justify;
+
+}
+
+
+/* ***********************BLOQUE DERECHO *****************************/
+.bloque_der {
+    flex: 0 0 40%; /* 40% del ancho */
+    padding: 1.5rem;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: blanchedalmond;
+    box-shadow: 0 2px 10px 8px rgba(245, 152, 80, 0.2);
+}
+
+.formulario {
+    font-size: 1rem;
+    font-weight:600;
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna */
+    gap: 1rem;  /* Espacio entre los elementos */
+}
+   
+.formulario p {
+    margin: 0; 
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    color: #333;
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+
+
+input:focus,
+textarea:focus {
+    border-color: #ff6f20;
+    outline: none;
+}
+
+/**************************TEXTAREA**********************************/
+textarea {
+    height: 120px;
+}
+
+
+.bloque_privacidad_form {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.centrar_boton_enviar{
+    margin:1rem 0;
+    text-align: center;
+
+}
+
+
+
+#enlace_he_leido_politica{
+    color: #000000 !important;
+}
+
+
+
+
+/***********************BOTON FORMULARIO**************************/
+button {
+    background-color: #ff6f20;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e65c00;
+}
+
+
+/*****************************MEDIAS QUERY  ***************************************/
+
+@media (max-width:480px) {
+    .bloque_padre {
+        flex-direction: column;
+    }
+
+    .bloque_izq, 
+    .bloque_der { 
+        flex: 1 0 100%;
+    }
+   
+}
+
+@media (min-width:481px) and (max-width:768px){
+    .bloque_padre {
+        flex-direction: column;
+    }
+
+    .bloque_izq, 
+    .bloque_der { 
+        flex: 1 0 100%;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px){
+    .bloque_izq{
+        flex: 1 0 50%;
+    
+    }
+    .bloque_der { 
+        flex: 1 0 50%;
+    }
+
+    .bloque_izq_info_politica{
+        font-size: 1.1rem;
+        
+    }
+
+    .formulario {
+        font-size: 1.1rem;
+    }
+
+}
+
+/**************FIN MEDIA QUERY  ***************************************************/

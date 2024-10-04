@@ -1,0 +1,142 @@
+@media (min-width: 577px) and (max-width: 1024px) {
+  
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .logo {
+        padding-top: 3%;
+        text-align: center;
+        width: 100%;
+    }
+
+    
+    a{
+        font-size: 1.7em !important;
+    }
+
+    
+    nav {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 3%;
+        margin: 0;
+        width: 100%;
+        height: 90px;
+        font-size: 1.2em;
+    }
+
+    .list-nav {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* Slider styles */
+    .slider-container {
+        padding: 0;
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
+    }
+
+    .slider {
+        width: 100%;
+        height: 100%;
+        transition: transform 0.4s ease;
+        width: 100%;
+        height: auto;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* SECCION 3 */
+
+    .seccion-3-texto h2 {
+        color: #FF7300;
+    }
+
+    .seccion-3-texto {
+        text-align: left;
+        width: 100%;
+    }
+
+    .seccion-3 {
+        margin-top: 8%;
+        margin-bottom: 4%;
+        text-align: center;
+        padding: 2%;
+        font-size: 1.4em;
+        line-height: 30px;
+    }
+
+    .seccion-3 h2 {
+        text-align: center;
+        color: #FF7300;
+        font-size: 1.6em;
+    }
+
+    .seccion-3 ul {
+        text-align: center;
+        padding-left: 2%;
+        
+        margin: 0;
+    }
+
+    /* SECCION BANNER */
+
+    .seccion-circular {
+        margin-top: 8%;
+        margin-bottom: 8%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .bannercirc {
+        width: 320px;
+        height: 280px;
+        border-radius: 25%;
+        font-size: 1em;
+    }
+
+    .banner-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        height: 400px;
+    }
+
+    .banner1, .banner2, .banner3 {
+        background-color: #535353;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+ 
+
+    /* FOOTER */
+
+   
+
+}

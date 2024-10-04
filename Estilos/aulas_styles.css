@@ -1,0 +1,111 @@
+
+
+@font-face {
+    font-family: ArchivoBlack ;
+    src: url(/fuentes/ArchivoBlack-Regular.ttf);
+  }
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+    
+html {
+
+h1 {
+    font-size: 2rem;
+    font-family:'ArchivoBlack';
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+    
+    
+}
+
+h2 {
+    font-size: 2.7rem;
+    font-family:'ArchivoBlack';
+}
+
+h3{
+    font-size: 1.25rem;
+    font-family:'ArchivoBlack';
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    a{
+        text-decoration: none;
+        color: #000000;
+        }
+
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+
+
+.titulo {
+    text-align: center;
+    width: 100%;
+    background: url(/imagenes/gray-bg.png);
+  
+     padding-top: 1px;
+     padding-bottom: 1px;
+    
+
+    color: white;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas por defecto */
+    grid-gap: 3.125rem; /* Espacio entre las imágenes */
+    margin: 6.25rem auto; /* Agrega un margen de 5% a ambos lados */
+}
+
+.image-grid img {
+    width: 100%; /* Elimina la restricción del 45% */
+    height: auto;
+}
+
+.aulas {
+    display: flex;
+    font-size: 1.875rem;
+    flex-direction: column; /* Apilar los elementos uno debajo del otro */
+    align-items: center; /* Centra el contenido horizontalmente */
+    padding: 1.25rem; /* Espacio alrededor del contenido */
+    max-width: 50rem; /* Para limitar el ancho del contenido si es necesario */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    text-align: center;
+    margin-bottom: 1.875rem;
+    }
+    .aulas a:hover {
+        font-size: 2.2rem;
+        color: #F59850;
+    }
+
+    .aulas > * {
+        margin-bottom: 1.5rem; /* Agregar margen entre cada texto u otro contenido */
+    }
+
+    .aulas > *:last-child {
+        margin-bottom: 0; /* Eliminar margen del último elemento */
+    }

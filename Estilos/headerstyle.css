@@ -1,0 +1,207 @@
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+
+@font-face {
+    font-family: ArchivoBlack ;
+    src: url(/fuentes/ArchivoBlack-Regular.ttf);
+  }
+
+
+
+
+nav ul li a[href="Inicio.html"]:hover,
+nav ul li a[href="Las_aulas.html"]:hover,
+nav ul li a[href="Contacto.html"]:hover {
+    text-decoration: underline;
+    transition: color 0.3s ease, font-size 0.3s ease;
+    font-size: 2rem;
+    
+
+}
+
+nav ul li a[href="Inicio.html"],
+nav ul li a[href="Las_aulas.html"],
+nav ul li a[href= "Contacto.html"] {
+    color:#F59850;
+    font-size: 1.5rem;
+    font-family: 'ArchivoBlack';
+
+}
+
+.logo img {
+    margin: 5%;
+    padding: 5%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+   
+
+}
+
+
+nav ul li {
+
+    margin: 20px;
+
+}
+
+nav ul li a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    
+}
+
+
+nav ul li ul.submenu li a {
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    color: white;
+    background-color: #F59850;
+    z-index: 1;
+    transition: all 0.3s ease-in-out; /* Transición suave al aparecer */
+}
+
+.subtitulo {
+    padding: 1.25rem; /* Espacio alrededor del contenido */
+    max-width: 50rem; /* Para limitar el ancho del contenido si es necesario */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+
+.submenu li a{
+    color: white !important;
+   
+}
+
+
+
+.submenu a:hover {
+    font-size: 1.2em;
+    text-decoration: underline;
+
+
+    
+   
+}
+  li:hover .submenu {
+    display: block;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+
+}
+
+
+
+
+a{
+text-decoration: none;
+font-weight: 700;
+color:  #e65c00 !important;
+}
+
+
+/*------------------------------RESPONSIVE-----------------------------*/
+@media screen and (max-width: 480px) {
+
+    /* Existing mobile media query */
+
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: row;
+        font-size: 1.2rem;
+        justify-content: space-between;
+        padding: 0 10px;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 5px;
+        padding: 5px;
+    }
+
+    .submenu li {
+        text-decoration: underline;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+header {
+            padding: 10px;
+            width: 100%;
+        }
+
+        .image-grid {
+            grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas pequeñas */
+            margin: 10px auto; /* Mantiene el grid centrado */
+            max-width: 95%; /* Ajusta el ancho del grid para pantallas pequeñas */
+        }
+
+nav ul li a {
+            font-size: 14px;
+        }
+
+        .submenu li {
+            text-decoration: underline;
+        }
+        
+
+
+      
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1366px) {
+
+    header {
+        padding: 10px;
+        width: 100%;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .submenu li {
+        text-decoration: underline;
+    }
+
+
+}
+

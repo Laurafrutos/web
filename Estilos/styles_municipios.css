@@ -1,0 +1,179 @@
+
+@font-face {
+    font-family: ArchivoBlack ;
+    src: url(/fuentes/ArchivoBlack-Regular.ttf);
+  }
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+
+    h1 {
+        margin-bottom: 1.5rem;
+        font-family:'ArchivoBlack';
+        font-size: 2rem;
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 2.5rem;
+        margin-top: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2.7rem;
+        font-family:'ArchivoBlack';
+    }
+    
+    h3{
+        font-size: 1.25rem;
+        font-family:'ArchivoBlack';
+    }
+    
+    p {
+        font-size: 1rem;
+        margin-bottom: 1.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a{
+        text-decoration: none;
+        color: #000000;
+        }
+
+
+    }
+
+    
+html body{
+    height: 100%;
+ 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+
+
+
+.titulo {
+    text-align: center;
+    width: 100%;
+    background: url(/imagenes/gray-bg.png);
+  
+     padding-top: 1px;
+     padding-bottom: 1px;
+     
+
+    color: white;
+}
+
+
+    h1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2rem;
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 2.5rem;
+        margin-top: 2.5rem;
+    }
+
+
+.slider {
+    
+    position: relative;
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    margin-bottom: 60px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 0.625rem;
+    font-size: 1.125rem;
+}
+
+.prev {
+    left: 0.625rem;
+}
+
+.next {
+    right: 0.625rem;
+}
+
+
+.contenedor-puntos {
+    text-align: center;
+    margin-top: 0.625rem;
+}
+
+.punto {
+    height: 0.9375rem;
+    width: 0.9375rem;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.punto-activo {
+    background-color: #717171;
+}
+
+
+
+.subtitulo {
+    padding: 1.25rem;
+    max-width: 50rem;
+    margin: 0 auto;
+    text-align: center;
+  
+}
+
+
+
+.justificado {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin-bottom: 15px; /* Espacio entre los párrafos */
+    margin-top: 1.875rem;
+}
+
+
+
+
+
+
